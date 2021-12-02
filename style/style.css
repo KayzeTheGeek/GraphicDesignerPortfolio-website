@@ -1,0 +1,347 @@
+/* ********
+         Default Values
+Fonts: Roboto(paragraphs), calistoga(headings)
+colors:
+1.  Sizzling Red: #f53b57;
+2.  Really Dark Blue: #181e2c;
+3.  Realy Light Blue: #e5ebf8; 
+***********/
+
+/***********
+        Basic Setup
+--------*/
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Reef", sans-serif;
+    color: #181e2c;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    font-family: "Roboto", sans-serif
+}
+
+body h1,
+body h2,
+body h3,
+body h4 {
+    font-family: "Calistoga", cursive
+}
+
+li {
+    list-style: none;
+    display: inline-block
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+/***********
+        header
+--------*/
+header {
+    width: 100%;
+    background-color: #181e2c;
+    color: #e5ebf8;
+}
+
+.heading-div {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.heading-div h1 {
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.nav-menu a {
+    color: #e5ebf8;
+    padding: 31px 30px;
+    transition: background-color .3s ease-in-out;
+    font-size: 21px;
+}
+
+.nav-menu a:hover {
+    background-color: #f53b57;
+}
+
+
+
+/***********
+        header-section
+--------*/
+.header-section {
+    height: 60vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(24, 30, 44, 0.8)), url(../img/2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #e5ebf8;
+}
+.header-section h2{
+    font-size: 60px;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    color: #e5ebf8;
+}
+.header-section p{
+    font-size: 23px;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+
+
+/***********
+        personal-info
+--------*/
+.personal-info{
+    text-align: center;
+    margin-top: 70px;
+}
+.personal-info img{
+    border: 4px solid #f53b57;
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: all .3s linear;
+}
+.personal-info img:hover{
+    filter: none;
+    border-radius: 50%;
+}
+.personal-info h2{
+    margin-top: 30px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.personal-info h3{
+    margin-top: 40px;
+    color: #f53b57;
+    font-size: 35px;
+}
+.personal-info p{
+    max-width: 1400px;
+    margin: 30px auto;
+    font-size: 19px;
+}
+/***********
+        abilities
+--------*/
+.abilities{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 120px auto;
+}
+.ability{
+    margin-right: 45px;
+}
+.ability:last-child{
+    margin: 0;
+}
+.ability i{
+    color: #f53b57;
+    font-size: 80px;
+}
+.ability h3{
+    margin-top: 30px;
+    font-size: 27px;
+}
+.ability p{
+    margin-top: 40px;
+}
+/***********
+        works
+--------*/
+.works{
+    background-color: #181e2c;
+    width: 100%;
+    text-align: center;
+    color: #e5ebf8;
+    padding: 80px 0;
+}
+.works h2{
+    padding-bottom: 50px;
+    font-size: 40px;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+}
+.works-gallery{
+    display: flex;
+    flex-flow: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.works-gallery img{
+    width: 32%;
+    margin: 1% 0;
+}
+/*----------------
+        contacts
+-----------------*/
+.contact{
+    background-color: #f53b57;
+    color: #e5ebf8;
+    text-align: center;
+    padding: 80px 0;
+    width: 100%;
+}
+.contact h2{
+    padding-top: 50px;
+    padding-bottom: 35px;
+    text-transform: uppercase;
+    font-size: 45px;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+}
+.contact form{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.contact input,
+.contact textarea{
+    width: 100%;
+    margin: 15px auto;
+    padding: 9px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #e5ebf8;
+}
+.contact textarea{
+    resize: none;
+}
+input:focus,
+textarea:focus{
+    background-color: #181e2c;
+    color: #e5ebf8;
+}
+form .button{
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: transparent;
+    transition: all .3s ease;
+}
+form .button:hover{
+    background-color: #e5ebf8;
+    color: #f53b57;
+    transform: scale(0.95)
+}
+/*----------------
+        footer
+-----------------*/
+footer{
+    text-align: center;
+    padding: 15px;
+    background-color: #181e2c;
+    color: #e5ebf8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
